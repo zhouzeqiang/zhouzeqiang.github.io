@@ -7,18 +7,18 @@
 
 # Site settings
 title:  倔强的小强
-subtitle: 分享技术，品味人生
-name: 纯洁的微笑 
-email: ityouknow@126.com
-description: 本站是纯洁的微笑的技术分享博客。内容涵盖生活故事、Java后端技术、Spring Boot、Spring Cloud、微服务架构、大数据演进、高可用架构、中间件使用、系统监控等相关的研究与知识分享。
-keywords: ityouknow,纯洁的微笑,Spring,Spring Boot,Spring Cloud,MongoDB,Jvm,Docker,生活故事,架构,大数据,一线,FastDFS,开发者,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,IT技术博客,Java,Python,
+subtitle: 成年人的社会没有容易
+name: 倔强的小强
+email: zhou.zeqiang@163.com
+description: 这是我的技术博客，分享我的技术和生活
+keywords: cqnewlife,倔强的小强,Spring,Spring Boot,Spring Cloud,MongoDB,Jvm,Docker,架构,大数据,一线,FastDFS,开发者,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,IT技术博客,Java,Python,
 encoding: "utf-8"
 favicon: favicon.ico 
 
-repository: ityouknow/ityouknow.github.io
-github_url: https://github.com/ityouknow
-url: http://www.ityouknow.com
-enforce_ssl: ityouknow.com
+repository: zhouzeqiang/zhouzeqiang.github.io
+github_url: https://github.com/zhouzeqiang
+url: http://www.cqnewlife.cn
+enforce_ssl: cqnewlife.cn
 
 ## Gem
 plugins:
@@ -52,39 +52,39 @@ syntax_highlighter_opts:
 paginate: 12
 paginate_path: 'page:num'
 
-# Navigation. top menu list
+# Navigation. top menu list(顶部的菜单栏)
 menus:
-
-
-  -
-    href: /cartoon.html
-    label: 漫画
-    target: _self
-
-  -
-    href: /it.html
-    label: 深度
-    target: _self
-
-  -
-    href: /zsxq.html
-    label: 挣钱
-    target: _self   
-
-  -
-    href: /life.html
-    label: 故事
-    target: _self
-
-  -
-    href: /arch.html
-    label: 架构
-    target: _self
-
-  -
-    href: /link.html
-    label: 友链
-    target: _self
+#
+#
+#  -
+#    href: /cartoon.html
+#    label: 漫画
+#    target: _self
+#
+#  -
+#    href: /it.html
+#    label: 深度
+#    target: _self
+#
+#  -
+#    href: /zsxq.html
+#    label: 挣钱
+#    target: _self
+#
+#  -
+#    href: /life.html
+#    label: 故事
+#    target: _self
+#
+#  -
+#    href: /arch.html
+#    label: 架构
+#    target: _self
+#
+#  -
+#    href: /link.html
+#    label: 友链
+#    target: _self
 
   -
     href: /about.html
@@ -119,7 +119,7 @@ navs:
 
   -
     
-    href: http://www.justdojava.com
+    href: /java.html
     label: Java
     target: _blank
     subnav:
@@ -128,10 +128,10 @@ navs:
         subHref: /java.html
         subLabel: Jvm 系列文章
         
-      -
-        subHref: http://www.justdojava.com
-        subLabel: Java 极客技术
-        target: _blank
+#      -
+#        subHref: http://www.justdojava.com
+#        subLabel: Java 极客技术
+#        target: _blank
 
   -
     
@@ -189,7 +189,7 @@ labels:
     target: _blank
 
 
-# selected articles
+# selected articles（侧边栏菜单）
 classes:
 
   -
@@ -197,15 +197,15 @@ classes:
     name: 我的故事
     describe: 生活就是故事，故事就是生活
 
-  -
-    href: /it.html
-    name: IT行业深度报道
-    describe: IT大佬，互联网知名公司的故事
-
-  -
-    href: /arch.html
-    name: 架构师之路
-    describe: 一个架构师的自我修养
+#  -
+#    href: /it.html
+#    name: IT行业深度报道
+#    describe: IT大佬，互联网知名公司的故事
+#
+#  -
+#    href: /arch.html
+#    name: 架构师之路
+#    describe: 一个架构师的自我修养
 
 
 # ---------------- #
@@ -213,8 +213,8 @@ classes:
 # ---------------- #
 subscribe_rss: /feed.xml
 
-# Sidebar to show popular repo
-side_bar_repo_limit: 6 # Number of repos to show
+# Sidebar to show popular repo（展示自己repository数量）
+side_bar_repo_limit: 3 # Number of repos to show
 
 # Google Analytics
 # analytics :
