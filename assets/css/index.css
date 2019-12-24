@@ -2,7 +2,7 @@
 
 .site-header{
     color: #fff;
-    background: #4183c4;
+    background: #a5c99f;
 }
 .site-header #site-header-brand {
     color: #fff;
@@ -18,7 +18,7 @@
 .icon-logo{fill: #fff;}
 
 .jumbotron {
-    background: #4183c4;
+    background: #a5c99f;
 }
 
 .site-header.site-header-nav-scrolled a {
@@ -31,9 +31,13 @@
 }
 
 .site-header.site-header-nav-scrolled a:hover {
-    color: #4183c4;
+    color: #6cc9c9;
 }
 
 .site-header .site-header-nav-item a {
-    color: #9acfea;
+    color: #fff;
+}
+
+.site-header.site-header-nav-scrolled .site-header-nav-item a {
+    color: #2e2e2e !important;
 }
