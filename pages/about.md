@@ -1,10 +1,10 @@
 ---
 layout: page
-title: About Me
+title: About me
 titlebar: About
 menu: about
-subtitle:  <span class="mega-octicon octicon-person"></span>&nbsp;&nbsp; I am a programmer         
-css: ['about.css', 'sidebar-popular-repo.css', '../../bower_components/flag-icon-css/css/flag-icon.min.css']
+subtitle:  <span class="fa fa-user-circle-o"></span>&nbsp;&nbsp; 我是倔强的小强，我是一个程序员         
+css: ['about.css']
 permalink: /about
 ---
 
