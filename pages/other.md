@@ -1,12 +1,11 @@
 ---
 layout: page
-title: MongoDB 系列文章
-titlebar: MongoDB
-subtitle: <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp; MongoDB 系列教程
-menu: mongodb
+title: Other
+titlebar: Other
+subtitle: <span class="mega-octicon octicon-calendar"></span>&nbsp;&nbsp;专题系列： &nbsp;&nbsp; <a href ="/arch.html"><font color="#1A0DAB">架构</font></a>&nbsp;&nbsp; <a href ="/life.html"><font color="#EB9439">故事</font></a>&nbsp;&nbsp; <a href ="/docker.html"><font color="#1E90FF">Docker</font></a>
+menu: other
 css: ['blog-page.css']
-permalink: /mongodb
-keywords: MongoDB,MongoDB 集群,部署,搭建,MongoDB 教程
+permalink: /other
 ---
 
 <div class="row">
@@ -15,7 +14,7 @@ keywords: MongoDB,MongoDB 集群,部署,搭建,MongoDB 教程
 
         <ul id="posts-list">
             {% for post in site.posts %}
-                {% if post.category=='mongodb'  or post.keywords contains 'mongodb' %}
+                {% if post.category=='test' or post.category=='test' or post.keywords contains 'test' %}
                 <li class="posts-list-item">
                     <div class="posts-content">
                         <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
