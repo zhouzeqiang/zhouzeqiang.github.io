@@ -1,8 +1,8 @@
 ---
 layout: page
-title: 你的生活和我一样吗
+title: 好好对待生活，它也会好好对待你
 titlebar: life
-subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; 你的生活有什么故事？
+subtitle: <span class="mega-octicon octicon-watch"></span>&nbsp;&nbsp; 生活不止眼前的苟且还有诗和远方的田野。
 menu: life
 css: ['blog-page.css']
 permalink: /life

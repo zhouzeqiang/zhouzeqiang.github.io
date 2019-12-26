@@ -5,13 +5,29 @@
         <!-- Blog list -->
         <ul id="posts-list">
             {% for post in site.posts %}
-            <li class="posts-list-item">
-                <div class="posts-content">
-                    <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
-                    <a class="posts-list-name bubble-float-left" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-                    <span class='circle'></span>
-                </div>
-            </li>
+                {* if post.header == true *}
+                    <!-- 置顶文章 -->
+                    <li class="posts-list-item">
+                        <div class="posts-content">
+                            <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
+                            <a class="posts-list-name bubble-float-left" href="{{ site.url }}{{ post.url }}"><span class="octicon .octicon-flame" style="color: red"></span>{{ post.title }}</a>
+                            <span class='circle'></span>
+                        </div>
+                    </li>
+                {* endif *}
+            {% endfor %}
+
+            {% for post in site.posts %}
+                {* if post.header != true *}
+                <!-- 普通文章 -->
+                <li class="posts-list-item">
+                    <div class="posts-content">
+                        <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
+                        <a class="posts-list-name bubble-float-left" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                        <span class='circle'></span>
+                    </div>
+                </li>
+                {* endif *}
             {% endfor %}
         </ul>
 

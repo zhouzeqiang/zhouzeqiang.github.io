@@ -1,52 +1,3 @@
-<!--
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    &lt;!&ndash; Favicon Icon &ndash;&gt;
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/{{ site.favicon }}">
-
-    <title>{% if page.titlebar %} {{ page.titlebar | escape }} - 纯洁的微笑博客 {% elsif page.title %} {{ page.title | escape }} - 纯洁的微笑博客 {% else %}{{ site.title | escape }}{% endif %}</title>
-    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords | escape }}{% else %}{{ site.keywords }}{% endif %}">
-    <meta name="description"
-          content="{% if page.excerpt %}{{ page.excerpt | escape }}{% else %}{{ site.description }}{% endif %}">
-
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-
-    &lt;!&ndash; Third-Party CSS &ndash;&gt;
-    <link rel="stylesheet" href="/assets/vendor/bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://www.ityouknow.com/bower_components/octicons/octicons/octicons.css">
-    <link rel="stylesheet" href="http://favorites.ren/bower_components/hover/css/hover-min.css">
-    <link rel="stylesheet" href="http://favorites.ren/bower_components/primer-markdown/dist/user-content.min.css">
-    <link rel="stylesheet" href="/assets/css/syntax.css">
-    <link rel="stylesheet" href="/assets/css/gitalk.css">
-
-
-
-    &lt;!&ndash; My CSS &ndash;&gt;
-    <link rel="stylesheet" href="/assets/css/common.css">
-
-    &lt;!&ndash; CSS set in page &ndash;&gt;
-    {% for css in page.css %}
-    <link rel="stylesheet" href="/assets/css/{{css}}">
-    {% endfor %}
-
-    &lt;!&ndash; CSS set in layout &ndash;&gt;
-    {% for css in layout.css %}
-    <link rel="stylesheet" href="/assets/css/{{css}}">
-    {% endfor %}
-
-    <link rel="stylesheet" type="text/css" href="/assets/plugins/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <script type="text/javascript" src="/assets/plugins/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="/assets/plugins/bootstrap/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/assets/js/lock.js"></script>
-</head>
--->
-
-
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -56,7 +7,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="/assets/images/{{ site.favicon }}">
 
     <title>{% if page.titlebar %} {{ page.titlebar | escape }} - 倔强的小强 {% elsif page.title %} {{ page.title | escape }} - 倔强的小强 {% else %}{{ site.title | escape }}{% endif %}</title>
-    <!--<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>-->
     <meta name="description"
           content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
