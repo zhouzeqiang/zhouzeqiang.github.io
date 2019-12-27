@@ -17,7 +17,7 @@ favicon: favicon-temp.ico
 
 repository: zhouzeqiang/zhouzeqiang.github.io
 github_url: https://github.com/zhouzeqiang
-url: http://127.0.0.1
+url:
 enforce_ssl: cqnewlife.cn
 
 ## Gem
