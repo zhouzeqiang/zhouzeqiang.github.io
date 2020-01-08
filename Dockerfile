@@ -24,4 +24,4 @@ WORKDIR /blog
 #CMD bundle exec jekyll serve --host 0.0.0.0
 
 #构建代码到指定文件夹
-CMD bundle exec jekyll bulid --destination=/var/jekyll/www/html
+CMD bundle exec jekyll build --destination=/var/jekyll/www/html
