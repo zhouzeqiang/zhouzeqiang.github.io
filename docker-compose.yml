@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  blog:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: zhouzeqiang.github.io:latest # 这里是我镜像的名字
+    ports:
+      - "4000:4000"
+    network_mode: host
