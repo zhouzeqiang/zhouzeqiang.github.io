@@ -16,7 +16,7 @@ RUN gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org
 RUN gem install jekyll bundler
 
 # 将当前文件下的文件复制到docker中
-#COPY . /blog/
+COPY . /blog/
 
 # gem install加速
 RUN bundle config mirror.https://rubygems.org https://gems.ruby-china.com
@@ -24,17 +24,13 @@ RUN bundle config mirror.https://rubygems.org https://gems.ruby-china.com
 #用来存放编译后的Jekyll网站码
 VOLUME /var/jekyll/www/html
 
-#用来存放源码
-VOLUME /blog
-
 #工作目录为blog
 WORKDIR /blog
 
 #进入docker文件下，执行bundler install
-#RUN bundler install
+RUN bundler install
 
 #容器启动后运行
 #构建代码到指定文件夹
-CMD bundler install \
-    bundle exec jekyll build --destination=/var/jekyll/www/html
+CMD bundle exec jekyll build --destination=/var/jekyll/www/html
 
