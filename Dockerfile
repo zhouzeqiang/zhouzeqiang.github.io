@@ -24,11 +24,14 @@ RUN bundle config mirror.https://rubygems.org https://gems.ruby-china.com
 #用来存放编译后的Jekyll网站码
 VOLUME /var/jekyll/www/html
 
+#用来存放源码
+VOLUME /blog
+
 #工作目录为blog
 WORKDIR /blog
 
 #进入docker文件下，执行bundler install
-RUN bundler install
+CMD bundler install
 
 #容器启动后运行
 #构建代码到指定文件夹

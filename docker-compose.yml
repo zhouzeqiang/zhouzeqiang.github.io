@@ -10,5 +10,6 @@ services:
       - 4000:4000
     volumes:
       - /var/jekyll/www/html:/var/jekyll/www/html
+      - ./:/blog
     network_mode: host
     working_dir: /blog
