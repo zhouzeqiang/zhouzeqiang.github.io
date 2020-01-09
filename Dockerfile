@@ -31,9 +31,10 @@ VOLUME /blog
 WORKDIR /blog
 
 #进入docker文件下，执行bundler install
-RUN bundler install
+#RUN bundler install
 
 #容器启动后运行
 #构建代码到指定文件夹
-CMD bundle exec jekyll build --destination=/var/jekyll/www/html
+CMD bundler install \
+    bundle exec jekyll build --destination=/var/jekyll/www/html
 
