@@ -8,7 +8,7 @@ services:
     image: zhouzeqiang.github.io:latest # 这里是我镜像的名字
     ports:
       - 4000:4000
-    volumes:
-      - /var/jekyll/www/html:/var/jekyll/www/html
+#    volumes:
+#      - /var/jekyll/www/html:/var/jekyll/www/html
     network_mode: host
     working_dir: /blog

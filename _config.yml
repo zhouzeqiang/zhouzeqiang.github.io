@@ -19,6 +19,7 @@ repository: zhouzeqiang/zhouzeqiang.github.io
 github_url: https://github.com/zhouzeqiang
 url: http://www.cqnewlife.cn
 enforce_ssl: cqnewlife.cn
+#permalink: /:categories/:title/
 
 ## Gem
 plugins:
