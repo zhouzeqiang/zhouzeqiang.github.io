@@ -11,7 +11,7 @@
           content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ feed.xml | prepend: site.baseurl | prepend: site.url }}">
 
 
     <!-- Third-Party CSS -->
@@ -38,8 +38,10 @@
 
     <link rel="stylesheet" type="text/css" href="/assets/plugins/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--<script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>-->
+    <!-- jQuery -->
+    <script src="//cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <!-- 文章加锁暂时关闭 -->
     <!--<script type="text/javascript" src="/assets/js/lock.js"></script>-->
 
