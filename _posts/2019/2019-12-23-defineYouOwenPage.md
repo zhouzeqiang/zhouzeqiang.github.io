@@ -19,7 +19,7 @@ keywords: other,java
     layout: page
     title: 这是一个测试页面
     titlebar: test
-    subtitle: <span class="mega-octicon octicon-calendar"></span>&nbsp;&nbsp;专题系列： &nbsp;&nbsp; <a href ="{{ site.url }}/arch.html"><font color="#1A0DAB">架构</font></a>&nbsp;&nbsp; <a href ="{{ site.url }}/life.html"><font color="#EB9439">故事</font></a>&nbsp;&nbsp; <a href ="{{ site.url }}/docker.html"><font color="#1E90FF">Docker</font></a>
+    subtitle: <span class="mega-octicon octicon-calendar"></span>&nbsp;&nbsp;专题系列： &nbsp;&nbsp; <a href ="/arch.html"><font color="#1A0DAB">架构</font></a>&nbsp;&nbsp; <a href ="/life.html"><font color="#EB9439">故事</font></a>&nbsp;&nbsp; <a href ="/docker.html"><font color="#1E90FF">Docker</font></a>
     menu: test
     css: ['blog-page.css']
     permalink: /test
@@ -35,7 +35,7 @@ keywords: other,java
                     <li class="posts-list-item">
                         <div class="posts-content">
                             <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
-                            <a class="posts-list-name bubble-float-left" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                            <a class="posts-list-name bubble-float-left" href="{{ post.url }}">{{ post.title }}</a>
                             <span class='circle'></span>
                         </div>
                     </li>
